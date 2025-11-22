@@ -1,0 +1,22 @@
+- name: "软件名称1"
+  category: system
+  description: "这是一个系统优化工具"
+  download: "https://pan.baidu.com/s/xxxxx"
+  password: "1234"  # 可选
+  version: "v2.5.0"
+  date: 2024-11-20
+  views: 1250
+  tags:
+    - 系统优化
+    - 清理工具
+
+- name: "软件名称2"
+  category: office
+  description: "办公效率神器"
+  download: "https://www.aliyundrive.com/s/xxxxx"
+  version: "v1.2"
+  date: 2024-11-19
+  views: 890
+  tags:
+    - 办公
+    - PDF
