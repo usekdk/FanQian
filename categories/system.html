@@ -4,18 +4,40 @@ title: 系统工具
 category: system
 ---
 
-<h1>系统工具</h1>
-
-<div class="software-grid">
-  {% for software in site.data.software %}
-    {% if software.category == page.category %}
-    <div class="software-card">
-      <h3>{{ software.name }}</h3>
-      <p>{{ software.description }}</p>
-      <a href="{{ software.download }}" class="download-btn" target="_blank">
-        立即下载
-      </a>
-    </div>
-    {% endif %}
-  {% endfor %}
-</div>
+<section>
+  <h2>🛠️ 系统工具</h2>
+  
+  <div class="software-grid">
+    {% for software in site.data.software %}
+      {% if software.category == page.category %}
+      <div class="software-card">
+        <div class="software-image">
+          <img src="{{ software.image | default: '/assets/images/placeholder.png' | relative_url }}" 
+               alt="{{ software.name }}">
+          <div class="software-badge">{{ software.version }}</div>
+        </div>
+        
+        <div class="software-content">
+          <h3 class="software-title">{{ software.name }}</h3>
+          <p class="software-description">{{ software.description }}</p>
+          
+          <div class="software-tags">
+            {% for tag in software.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          
+          <div class="software-actions">
+            <a href="{{ software.download }}" class="download-btn" target="_blank">
+              立即下载
+            </a>
+            {% if software.password %}
+            <span class="password-badge">🔑 {{ software.password }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
