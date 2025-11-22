@@ -1,22 +1,24 @@
-- name: "软件名称1"
+- name: "CCleaner"
   category: system
-  description: "这是一个系统优化工具"
+  description: "系统清理优化工具，清理垃圾文件，保护隐私"
   download: "https://pan.baidu.com/s/xxxxx"
-  password: "1234"  # 可选
-  version: "v2.5.0"
+  password: "1234"
+  version: "v6.10"
   date: 2024-11-20
   views: 1250
+  image: "/assets/images/software/ccleaner.png"  # 软件展示图片
   tags:
     - 系统优化
     - 清理工具
 
-- name: "软件名称2"
+- name: "WPS Office"
   category: office
-  description: "办公效率神器"
+  description: "轻量级办公软件套件，兼容Microsoft Office"
   download: "https://www.aliyundrive.com/s/xxxxx"
-  version: "v1.2"
+  version: "v11.2"
   date: 2024-11-19
   views: 890
+  image: "/assets/images/software/wps.png"
   tags:
     - 办公
-    - PDF
+    - 文档编辑
